@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -7,29 +8,39 @@ using System.Windows.Forms;
 
 namespace Project_TOO
 {
-    public static class ProjectController
+    public class ProjectController
     {
-        static Form1 form1 = new Form1();
-       
-        #region UserControls
-        public static void ChangeUserControl(Panel panel, UserControl userControl)
+        private string _displayName;
+        public string DisplayName
         {
-            foreach (Control control in form1.Controls.OfType<Control>())
+            get { return _displayName; }
+        }
+
+        public void SetName(string name)
+        {
+            if (!File.Exists("username"))
             {
-                if (control.Name == "Panel_Placeholder")
-                {
-                    panel.Controls.Remove(control);
-                }
+                StreamWriter writer = new StreamWriter("username");
+                writer.Write(name);
+                writer.Flush();
+                writer.Close();
+                _displayName = name;
+            }
+            else
+            {
+                StreamWriter writer = new StreamWriter("username");
+                writer.Write(name);
+                writer.Flush();
+                writer.Close();
+                _displayName = name;
             }
 
-            foreach (Control control in form1.Controls.OfType<Control>())
-            {
-                if (control.Name == "Panel_Placeholder")
-                {
-                    panel.Controls.Add(userControl);
-                }
-            }
+            MainForm.SetDisplayName(DisplayName);
         }
-        #endregion
+        
+        public void GetName()
+        {
+
+        }
     }
 }

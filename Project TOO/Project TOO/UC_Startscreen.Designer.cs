@@ -125,6 +125,7 @@
             this.Button_Proceed.Size = new System.Drawing.Size(163, 37);
             this.Button_Proceed.TabIndex = 7;
             this.Button_Proceed.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Button_Proceed.Click += new System.EventHandler(this.Procced_Click);
             // 
             // Logo
             // 
@@ -147,7 +148,6 @@
             this.Controls.Add(this.Logo);
             this.Name = "UC_Startscreen";
             this.Size = new System.Drawing.Size(534, 302);
-            this.Load += new System.EventHandler(this.UC_Startscreen_Load);
             this.Panel_Textbox.ResumeLayout(false);
             this.Panel_Textbox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();

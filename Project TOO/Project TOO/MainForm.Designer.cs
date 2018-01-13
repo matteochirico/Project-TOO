@@ -1,6 +1,6 @@
 ﻿namespace Project_TOO
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -30,6 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             this.Header = new System.Windows.Forms.Panel();
+            this.Label_DisplayName = new System.Windows.Forms.Label();
+            this.Picture_Minimize = new System.Windows.Forms.PictureBox();
+            this.Picture_Exit = new System.Windows.Forms.PictureBox();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.Panel_Placeholder = new System.Windows.Forms.Panel();
             this.Drag_Header = new Bunifu.Framework.UI.BunifuDragControl(this.components);
@@ -37,12 +40,7 @@
             this.Timer_Start = new System.Windows.Forms.Timer(this.components);
             this.Timer_MinimizeOut = new System.Windows.Forms.Timer(this.components);
             this.Timer_MinimizeIn = new System.Windows.Forms.Timer(this.components);
-            this.Picture_Minimize = new System.Windows.Forms.PictureBox();
-            this.Picture_Exit = new System.Windows.Forms.PictureBox();
-            this.Label_DisplayName = new System.Windows.Forms.Label();
-            this.uC_Main1 = new Project_TOO.UC_Main();
             this.Header.SuspendLayout();
-            this.Panel_Placeholder.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Picture_Minimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Picture_Exit)).BeginInit();
             this.SuspendLayout();
@@ -59,6 +57,41 @@
             this.Header.Size = new System.Drawing.Size(534, 40);
             this.Header.TabIndex = 0;
             // 
+            // Label_DisplayName
+            // 
+            this.Label_DisplayName.AutoSize = true;
+            this.Label_DisplayName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Label_DisplayName.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_DisplayName.ForeColor = System.Drawing.Color.White;
+            this.Label_DisplayName.Location = new System.Drawing.Point(9, 11);
+            this.Label_DisplayName.Name = "Label_DisplayName";
+            this.Label_DisplayName.Size = new System.Drawing.Size(0, 18);
+            this.Label_DisplayName.TabIndex = 7;
+            // 
+            // Picture_Minimize
+            // 
+            this.Picture_Minimize.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Picture_Minimize.Image = global::Project_TOO.Properties.Resources.Minimize_Application__White_;
+            this.Picture_Minimize.Location = new System.Drawing.Point(462, 8);
+            this.Picture_Minimize.Name = "Picture_Minimize";
+            this.Picture_Minimize.Size = new System.Drawing.Size(25, 25);
+            this.Picture_Minimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Picture_Minimize.TabIndex = 3;
+            this.Picture_Minimize.TabStop = false;
+            this.Picture_Minimize.Click += new System.EventHandler(this.Picture_Minimize_Click);
+            // 
+            // Picture_Exit
+            // 
+            this.Picture_Exit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Picture_Exit.Image = global::Project_TOO.Properties.Resources.Exit_Application__White_;
+            this.Picture_Exit.Location = new System.Drawing.Point(496, 5);
+            this.Picture_Exit.Name = "Picture_Exit";
+            this.Picture_Exit.Size = new System.Drawing.Size(30, 30);
+            this.Picture_Exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Picture_Exit.TabIndex = 2;
+            this.Picture_Exit.TabStop = false;
+            this.Picture_Exit.Click += new System.EventHandler(this.Picture_Exit_Click);
+            // 
             // bunifuElipse1
             // 
             this.bunifuElipse1.ElipseRadius = 15;
@@ -66,7 +99,6 @@
             // 
             // Panel_Placeholder
             // 
-            this.Panel_Placeholder.Controls.Add(this.uC_Main1);
             this.Panel_Placeholder.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Panel_Placeholder.Location = new System.Drawing.Point(0, 40);
             this.Panel_Placeholder.Name = "Panel_Placeholder";
@@ -100,50 +132,6 @@
             this.Timer_MinimizeIn.Interval = 1;
             this.Timer_MinimizeIn.Tick += new System.EventHandler(this.Timer_MinimizeIn_Tick);
             // 
-            // Picture_Minimize
-            // 
-            this.Picture_Minimize.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Picture_Minimize.Image = global::Project_TOO.Properties.Resources.Minimize_Application__White_;
-            this.Picture_Minimize.Location = new System.Drawing.Point(462, 8);
-            this.Picture_Minimize.Name = "Picture_Minimize";
-            this.Picture_Minimize.Size = new System.Drawing.Size(25, 25);
-            this.Picture_Minimize.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Picture_Minimize.TabIndex = 3;
-            this.Picture_Minimize.TabStop = false;
-            this.Picture_Minimize.Click += new System.EventHandler(this.Picture_Minimize_Click);
-            // 
-            // Picture_Exit
-            // 
-            this.Picture_Exit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Picture_Exit.Image = global::Project_TOO.Properties.Resources.Exit_Application__White_;
-            this.Picture_Exit.Location = new System.Drawing.Point(496, 5);
-            this.Picture_Exit.Name = "Picture_Exit";
-            this.Picture_Exit.Size = new System.Drawing.Size(30, 30);
-            this.Picture_Exit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Picture_Exit.TabIndex = 2;
-            this.Picture_Exit.TabStop = false;
-            this.Picture_Exit.Click += new System.EventHandler(this.Picture_Exit_Click);
-            // 
-            // Label_DisplayName
-            // 
-            this.Label_DisplayName.AutoSize = true;
-            this.Label_DisplayName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Label_DisplayName.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_DisplayName.ForeColor = System.Drawing.Color.White;
-            this.Label_DisplayName.Location = new System.Drawing.Point(9, 11);
-            this.Label_DisplayName.Name = "Label_DisplayName";
-            this.Label_DisplayName.Size = new System.Drawing.Size(80, 18);
-            this.Label_DisplayName.TabIndex = 7;
-            this.Label_DisplayName.Text = "Matteo C.";
-            // 
-            // uC_Main1
-            // 
-            this.uC_Main1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(50)))), ((int)(((byte)(56)))));
-            this.uC_Main1.Location = new System.Drawing.Point(0, -1);
-            this.uC_Main1.Name = "uC_Main1";
-            this.uC_Main1.Size = new System.Drawing.Size(534, 302);
-            this.uC_Main1.TabIndex = 0;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -158,7 +146,6 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Header.ResumeLayout(false);
             this.Header.PerformLayout();
-            this.Panel_Placeholder.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Picture_Minimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Picture_Exit)).EndInit();
             this.ResumeLayout(false);
@@ -178,7 +165,6 @@
         private System.Windows.Forms.PictureBox Picture_Exit;
         private System.Windows.Forms.Timer Timer_MinimizeIn;
         public System.Windows.Forms.Label Label_DisplayName;
-        private UC_Main uC_Main1;
     }
 }
 

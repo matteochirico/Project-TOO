@@ -10,23 +10,57 @@ using System.Windows.Forms;
 
 namespace Project_TOO
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        public static UC_Startscreen UCS = new UC_Startscreen();
+        static Panel placeHolder;
+        static Label displayNameLabel;
 
-        public Form1()
+        public enum PanelControlsEnum
+        {
+            Startscreen,
+            Mainscreen
+        }
+
+        static UC_Startscreen ucs = new UC_Startscreen();
+        static UC_Main ucm = new UC_Main();
+
+        public MainForm()
         {
             InitializeComponent();
             this.Opacity = 0;
+
+            placeHolder = Panel_Placeholder;
+            displayNameLabel = Label_DisplayName;
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             Timer_Start.Start();
-            ProjectController.ChangeUserControl(Panel_Placeholder, UCS);
+            SwitchPanelControls(PanelControlsEnum.Startscreen);
         }
 
-        #region FadeIn & FadeOut
+        #region Personalization
+        public static void SwitchPanelControls(PanelControlsEnum options)
+        {
+            switch (options)
+            {
+                case PanelControlsEnum.Startscreen:
+                    placeHolder.Controls.Clear();
+                    placeHolder.Controls.Add(ucs);
+                    break;
+                case PanelControlsEnum.Mainscreen:
+                    placeHolder.Controls.Clear();
+                    placeHolder.Controls.Add(ucm);
+                    break;
+            }
+        }
+
+        public static void SetDisplayName(string name)
+        {
+            displayNameLabel.Text = name;
+        }
+
+        #region Fade in & Out
         private void Picture_Exit_Click(object sender, EventArgs e)
         {
             Timer_Exit.Start();
@@ -82,6 +116,7 @@ namespace Project_TOO
                 }
             }
         }
+        #endregion
         #endregion
     }
 }
