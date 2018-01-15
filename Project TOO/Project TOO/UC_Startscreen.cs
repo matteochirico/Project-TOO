@@ -57,7 +57,7 @@ namespace Project_TOO
                     var firstNameRest = text.Substring(1, space - 1).ToLower();
 
                     var firstLetterSecondName = text.Substring(space, 1).ToUpper();
-                    string restOfSecondName; 
+                    string restOfSecondName = string.Empty; 
 
                     formattedName = (firstLetter + firstNameRest) + firstLetterSecondName + restOfSecondName;
                 }
