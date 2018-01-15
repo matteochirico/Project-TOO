@@ -14,8 +14,8 @@ namespace Project_TOO
     {
         static Panel placeHolder;
         static Label displayNameLabel;
-
-        public enum PanelControlsEnum
+        
+        public enum UserControl
         {
             Startscreen,
             Mainscreen
@@ -28,7 +28,7 @@ namespace Project_TOO
         {
             InitializeComponent();
             this.Opacity = 0;
-
+            
             placeHolder = Panel_Placeholder;
             displayNameLabel = Label_DisplayName;
         }
@@ -36,19 +36,19 @@ namespace Project_TOO
         private void Form1_Load(object sender, EventArgs e)
         {
             Timer_Start.Start();
-            SwitchPanelControls(PanelControlsEnum.Startscreen);
+            SwitchPanelUC(UserControl.Startscreen);
         }
 
         #region Personalization
-        public static void SwitchPanelControls(PanelControlsEnum options)
+        public static void SwitchPanelUC(UserControl userControl)
         {
-            switch (options)
+            switch (userControl)
             {
-                case PanelControlsEnum.Startscreen:
+                case UserControl.Startscreen:
                     placeHolder.Controls.Clear();
                     placeHolder.Controls.Add(ucs);
                     break;
-                case PanelControlsEnum.Mainscreen:
+                case UserControl.Mainscreen:
                     placeHolder.Controls.Clear();
                     placeHolder.Controls.Add(ucm);
                     break;

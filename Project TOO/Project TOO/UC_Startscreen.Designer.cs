@@ -38,6 +38,7 @@
             this.Elipse_Button = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.Button_Proceed = new Bunifu.Framework.UI.BunifuThinButton2();
             this.Logo = new System.Windows.Forms.PictureBox();
+            this.Label_ErrorText = new System.Windows.Forms.Label();
             this.Panel_Textbox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             this.SuspendLayout();
@@ -90,6 +91,7 @@
             this.Textbox.Size = new System.Drawing.Size(195, 19);
             this.Textbox.TabIndex = 0;
             this.Textbox.Click += new System.EventHandler(this.Textbox_Click);
+            this.Textbox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Textbox_KeyPress);
             // 
             // Elipse_Textbox
             // 
@@ -137,11 +139,24 @@
             this.Logo.TabIndex = 3;
             this.Logo.TabStop = false;
             // 
+            // Label_ErrorText
+            // 
+            this.Label_ErrorText.AutoSize = true;
+            this.Label_ErrorText.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_ErrorText.ForeColor = System.Drawing.Color.White;
+            this.Label_ErrorText.Location = new System.Drawing.Point(170, 260);
+            this.Label_ErrorText.Name = "Label_ErrorText";
+            this.Label_ErrorText.Size = new System.Drawing.Size(194, 18);
+            this.Label_ErrorText.TabIndex = 8;
+            this.Label_ErrorText.Text = "Du må skrive inn ett navn.";
+            this.Label_ErrorText.Visible = false;
+            // 
             // UC_Startscreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(50)))), ((int)(((byte)(56)))));
+            this.Controls.Add(this.Label_ErrorText);
             this.Controls.Add(this.Button_Proceed);
             this.Controls.Add(this.Panel_Textbox);
             this.Controls.Add(this.Title);
@@ -166,5 +181,6 @@
         private System.Windows.Forms.Label Label_Textbox;
         private Bunifu.Framework.UI.BunifuThinButton2 Button_Proceed;
         private Bunifu.Framework.UI.BunifuElipse Elipse_Button;
+        private System.Windows.Forms.Label Label_ErrorText;
     }
 }

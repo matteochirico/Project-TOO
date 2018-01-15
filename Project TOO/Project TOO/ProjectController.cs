@@ -8,15 +8,15 @@ using System.Windows.Forms;
 
 namespace Project_TOO
 {
-    public class ProjectController
+    public static class ProjectController
     {
-        private string _displayName;
-        public string DisplayName
+        private static string _displayName;
+        public static string DisplayName
         {
             get { return _displayName; }
         }
 
-        public void SetName(string name)
+        public static void SetDisplayName(string name)
         {
             if (!File.Exists("username"))
             {
@@ -37,8 +37,8 @@ namespace Project_TOO
 
             MainForm.SetDisplayName(DisplayName);
         }
-        
-        public void GetName()
+
+        public static void GetDisplayName()
         {
 
         }

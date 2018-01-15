@@ -24,14 +24,60 @@ namespace Project_TOO
 
         private void Procced_Click(object sender, EventArgs e)
         {
-            ProjectController controller = new ProjectController();
+            Proceed();
+        }
 
-            if (!string.IsNullOrWhiteSpace(Textbox.Text))
+        private void Textbox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
             {
-                controller.SetName(Textbox.Text);
+                Proceed();
+            }
+        }
+
+        private void Proceed()
+        {
+            var text = Textbox.Text;
+            
+            if (!string.IsNullOrWhiteSpace(text))
+            {
+                string formattedName = string.Empty;
+
+                if (!text.Contains(" "))
+                {
+                    var firstLetter = text.Substring(0, 1).ToUpper();
+                    var restName = text.Substring(1, text.Length - 1).ToLower();
+                    formattedName = firstLetter + restName;
+                }
+                else
+                {
+                    var space = text.IndexOf(" ");
+
+                    var firstLetter = text.Substring(0, 1).ToUpper();
+                    var firstNameRest = text.Substring(1, space - 1).ToLower();
+
+                    var firstLetterSecondName = text.Substring(space, 1).ToUpper();
+                    string restOfSecondName; 
+
+                    formattedName = (firstLetter + firstNameRest) + firstLetterSecondName + restOfSecondName;
+                }
+
+                ProjectController.SetDisplayName(formattedName);
+            }
+            else
+            {
+                ShowErrorText();
+                return;
             }
 
-            MainForm.SwitchPanelControls(MainForm.PanelControlsEnum.Mainscreen);
+            MainForm.SwitchPanelUC(MainForm.UserControl.Mainscreen);
+        }
+
+        private async void ShowErrorText()
+        {
+            Label_ErrorText.Visible = true;
+            await Task.Delay(TimeSpan.FromSeconds(2));
+            Label_ErrorText.Visible = false;
         }
     }
 }
