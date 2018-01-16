@@ -51,15 +51,7 @@ namespace Project_TOO
                 }
                 else
                 {
-                    var space = text.IndexOf(" ");
 
-                    var firstLetter = text.Substring(0, 1).ToUpper();
-                    var firstNameRest = text.Substring(1, space - 1).ToLower();
-
-                    var firstLetterSecondName = text.Substring(space, 1).ToUpper();
-                    string restOfSecondName = string.Empty; 
-
-                    formattedName = (firstLetter + firstNameRest) + firstLetterSecondName + restOfSecondName;
                 }
 
                 ProjectController.SetDisplayName(formattedName);
