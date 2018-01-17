@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Project_TOO
 {
-    public abstract class Mathematic
+    public abstract class Math
     {
         protected Random random = new Random();
 
@@ -23,7 +23,7 @@ namespace Project_TOO
         public abstract void GetRandomNumbers(int minRange, int maxRange);
     }
 
-    public class Multiplication : Mathematic
+    public class Multiplication : Math
     {
         public override bool CorrectAnswer(string answer)
         {

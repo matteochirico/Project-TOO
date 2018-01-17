@@ -48,7 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Mathematic.cs" />
+    <Compile Include="Math.cs" />
     <Compile Include="ProjectController.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
