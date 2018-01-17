@@ -125,6 +125,7 @@
             this.Label_Log.Size = new System.Drawing.Size(107, 18);
             this.Label_Log.TabIndex = 6;
             this.Label_Log.Text = "Se på loggen";
+            this.Label_Log.Click += new System.EventHandler(this.Log_Clicked);
             this.Label_Log.MouseEnter += new System.EventHandler(this.Panel_Log_MouseEnter);
             this.Label_Log.MouseLeave += new System.EventHandler(this.Panel_Log_MouseLeave);
             // 
@@ -143,6 +144,7 @@
             this.Picture_Log.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Picture_Log.TabIndex = 11;
             this.Picture_Log.TabStop = false;
+            this.Picture_Log.Click += new System.EventHandler(this.Log_Clicked);
             this.Picture_Log.MouseEnter += new System.EventHandler(this.Panel_Log_MouseEnter);
             this.Picture_Log.MouseLeave += new System.EventHandler(this.Panel_Log_MouseLeave);
             // 

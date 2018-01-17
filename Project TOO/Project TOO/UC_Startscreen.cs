@@ -38,9 +38,15 @@ namespace Project_TOO
         private void Proceed()
         {
             var text = Textbox.Text;
-            
+
             if (!string.IsNullOrWhiteSpace(text))
             {
+                if (text.Length <= 3)
+                {
+                    ShowErrorText(null);
+                    return;
+                }
+
                 string formattedName = string.Empty;
                 
                 if (!text.Contains(' '))
@@ -82,16 +88,24 @@ namespace Project_TOO
             MainForm.SwitchPanelUC(MainForm.UserControl.Mainscreen);
         }
 
-        private async void ShowErrorText(bool error)
+        private async void ShowErrorText(bool? error)
         {
-            if (error)
+            switch (error)
             {
-                Label_ErrorText.Visible = true;
-            }
-            else
-            {
-                Label_ErrorText.Text = "Kontroller mellomrom i navnet og fortsett.";
-                Label_ErrorText.Visible = true;
+                case true:
+                    Label_ErrorText.Visible = true;
+                    break;
+                case false:
+                    Label_ErrorText.Text = "Kontroller mellomrom i navnet og fortsett.";
+                    Label_ErrorText.Visible = true;
+                    break;
+                default:
+                    if (Label_ErrorText.Left != 203)
+                        Label_ErrorText.Left = 203;
+
+                    Label_ErrorText.Text = "Kontroller navnet.";
+                    Label_ErrorText.Visible = true;
+                    break;
             }
 
             await Task.Delay(TimeSpan.FromSeconds(1));

@@ -83,6 +83,16 @@ namespace Project_TOO.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Go_Back__White_ {
+            get {
+                object obj = ResourceManager.GetObject("Go Back (White)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap History__Silver_ {
             get {
                 object obj = ResourceManager.GetObject("History (Silver)", resourceCulture);

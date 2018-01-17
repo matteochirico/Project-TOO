@@ -40,14 +40,17 @@
             this.Timer_Start = new System.Windows.Forms.Timer(this.components);
             this.Timer_MinimizeOut = new System.Windows.Forms.Timer(this.components);
             this.Timer_MinimizeIn = new System.Windows.Forms.Timer(this.components);
+            this.Picture_GoBack = new System.Windows.Forms.PictureBox();
             this.Header.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Picture_Minimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Picture_Exit)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Picture_GoBack)).BeginInit();
             this.SuspendLayout();
             // 
             // Header
             // 
             this.Header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(40)))), ((int)(((byte)(46)))));
+            this.Header.Controls.Add(this.Picture_GoBack);
             this.Header.Controls.Add(this.Label_DisplayName);
             this.Header.Controls.Add(this.Picture_Minimize);
             this.Header.Controls.Add(this.Picture_Exit);
@@ -132,7 +135,20 @@
             this.Timer_MinimizeIn.Interval = 1;
             this.Timer_MinimizeIn.Tick += new System.EventHandler(this.Timer_MinimizeIn_Tick);
             // 
-            // Form1
+            // Picture_GoBack
+            // 
+            this.Picture_GoBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Picture_GoBack.Image = global::Project_TOO.Properties.Resources.Go_Back__White_;
+            this.Picture_GoBack.Location = new System.Drawing.Point(423, 5);
+            this.Picture_GoBack.Name = "Picture_GoBack";
+            this.Picture_GoBack.Size = new System.Drawing.Size(30, 30);
+            this.Picture_GoBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Picture_GoBack.TabIndex = 8;
+            this.Picture_GoBack.TabStop = false;
+            this.Picture_GoBack.Visible = false;
+            this.Picture_GoBack.Click += new System.EventHandler(this.Picture_GoBackClicked);
+            // 
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -141,13 +157,14 @@
             this.Controls.Add(this.Panel_Placeholder);
             this.Controls.Add(this.Header);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Header.ResumeLayout(false);
             this.Header.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Picture_Minimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Picture_Exit)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Picture_GoBack)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -165,6 +182,7 @@
         private System.Windows.Forms.PictureBox Picture_Exit;
         private System.Windows.Forms.Timer Timer_MinimizeIn;
         public System.Windows.Forms.Label Label_DisplayName;
+        public System.Windows.Forms.PictureBox Picture_GoBack;
     }
 }
 

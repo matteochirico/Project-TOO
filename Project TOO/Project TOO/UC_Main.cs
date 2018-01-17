@@ -42,5 +42,11 @@ namespace Project_TOO
             Picture_Log.Image = Properties.Resources.History__White_;
         }
         #endregion
+
+        private void Log_Clicked(object sender, EventArgs e)
+        {
+            MainForm.mf.Picture_GoBack.Visible = true;
+            MainForm.SwitchPanelUC(MainForm.UserControl.Log);
+        }
     }
 }

@@ -14,21 +14,25 @@ namespace Project_TOO
     {
         static Panel placeHolder;
         static Label displayNameLabel;
-        
-        public enum UserControl
-        {
-            Startscreen,
-            Mainscreen
-        }
+        public static MainForm mf;
 
         static UC_Startscreen ucs = new UC_Startscreen();
         static UC_Main ucm = new UC_Main();
+        static UC_Log ucl = new UC_Log();
+
+        public enum UserControl
+        {
+            Startscreen,
+            Mainscreen,
+            Log
+        }
 
         public MainForm()
         {
             InitializeComponent();
             this.Opacity = 0;
-            
+            mf = this;
+
             placeHolder = Panel_Placeholder;
             displayNameLabel = Label_DisplayName;
         }
@@ -51,6 +55,10 @@ namespace Project_TOO
                 case UserControl.Mainscreen:
                     placeHolder.Controls.Clear();
                     placeHolder.Controls.Add(ucm);
+                    break;
+                case UserControl.Log:
+                    placeHolder.Controls.Clear();
+                    placeHolder.Controls.Add(ucl);
                     break;
             }
         }
@@ -118,5 +126,19 @@ namespace Project_TOO
         }
         #endregion
         #endregion
+
+        private void Picture_GoBackClicked(object sender, EventArgs e)
+        {
+            GoBack();
+        }
+
+        public void GoBack()
+        {
+            if (placeHolder.Controls.Contains(ucl))
+            {
+                SwitchPanelUC(UserControl.Mainscreen);
+                Picture_GoBack.Visible = false;
+            }
+        }
     }
 }

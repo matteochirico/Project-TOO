@@ -63,6 +63,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="UC_Log.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC_Log.Designer.cs">
+      <DependentUpon>UC_Log.cs</DependentUpon>
+    </Compile>
     <Compile Include="UC_Main.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -82,6 +88,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC_Log.resx">
+      <DependentUpon>UC_Log.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC_Main.resx">
       <DependentUpon>UC_Main.cs</DependentUpon>
@@ -125,6 +134,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Application Art\png\Start Test %28Silver%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Application Art\png\Go Back %28White%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
