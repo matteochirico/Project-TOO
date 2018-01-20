@@ -118,28 +118,73 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="History (Silver)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Application Art\png\History (Silver).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Exit_Application__White_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Application Art\png\Exit Application (White).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Start Test (White)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Application Art\png\Start Test (White).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Minimize Application (White)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Application Art\png\Minimize Application (White).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Application_Icon__White_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Application Art\png\Application Icon (White).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="History (White)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Application Art\png\History (White).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Start Test (Silver)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Application Art\png\Start Test (Silver).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Exit Application (DimGray)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Application Art\png\Exit Application (DimGray).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Minimize Application (White)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Application Art\png\Minimize Application (White).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Application Icon (DimGray)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Application Art\png\Application Icon (DimGray).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Start Test (DimGray)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Application Art\png\Start Test (DimGray).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Go Back (White)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Application Art\png\Go Back (White).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="History (DimGray)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Application Art\png\History (DimGray).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Exit Application (Silver)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Application Art\png\Exit Application (Silver).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Minimize Application (DimGray)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Application Art\png\Minimize Application (DimGray).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="History (DarkGray)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Application Art\png\History (DarkGray).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Start Test (DarkGray)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Application Art\png\Start Test (DarkGray).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Go Home (DarkGray)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Application Art\png\Go Home (DarkGray).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Exit_Application__White_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Application Art\png\Exit Application (White).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Go Home (DimGray)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Application Art\png\Go Home (DimGray).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Start Test (White)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Application Art\png\Start Test (White).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Exit Application (DarkGray)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Application Art\png\Exit Application (DarkGray).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Minimize Application (DarkGray)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Application Art\png\Minimize Application (DarkGray).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="History (Silver)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Application Art\png\History (Silver).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Start Test (Silver)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Application Art\png\Start Test (Silver).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Minimize Application (Silver)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Application Art\png\Minimize Application (Silver).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Go Home (Silver)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Application Art\png\Go Home (Silver).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Go Home (White)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Application Art\png\Go Home (White).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

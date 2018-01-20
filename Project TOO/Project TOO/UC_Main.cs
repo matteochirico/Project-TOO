@@ -17,36 +17,42 @@ namespace Project_TOO
             InitializeComponent();
         }
 
-        #region Color Handling
+        #region Color Handling & Click Events
         private void Panel_Start_MouseEnter(object sender, EventArgs e)
         {
-            Label_Start.ForeColor = Color.FromArgb(192, 192, 192);
-            Picture_Start.Image = Properties.Resources.Start_Test__Silver_;
+            Label_Start.ForeColor = Color.FromArgb(64, 64, 65);
+            Picture_Start.Image = Properties.Resources.Start_Test__DarkGray_;
         }
 
         private void Panel_Start_MouseLeave(object sender, EventArgs e)
         {
-            Label_Start.ForeColor = Color.FromArgb(255, 255, 255);
-            Picture_Start.Image = Properties.Resources.Start_Test__White_;
+            Label_Start.ForeColor = Color.FromArgb(74, 74, 75);
+            Picture_Start.Image = Properties.Resources.Start_Test__DimGray_;
         }
 
         private void Panel_Log_MouseEnter(object sender, EventArgs e)
         {
-            Label_Log.ForeColor = Color.FromArgb(192, 192, 192);
-            Picture_Log.Image = Properties.Resources.History__Silver_;
+            Label_Log.ForeColor = Color.FromArgb(64, 64, 65);
+            Picture_Log.Image = Properties.Resources.History__DarkGray_;
         }
 
         private void Panel_Log_MouseLeave(object sender, EventArgs e)
         {
-            Label_Log.ForeColor = Color.FromArgb(255, 255, 255);
-            Picture_Log.Image = Properties.Resources.History__White_;
+            Label_Log.ForeColor = Color.FromArgb(74, 74, 75);
+            Picture_Log.Image = Properties.Resources.History__DimGray_;
         }
-        #endregion
 
         private void Log_Clicked(object sender, EventArgs e)
         {
-            MainForm.mf.Picture_GoBack.Visible = true;
+            MainForm.mf.Picture_GoHome.Visible = true;
             MainForm.SwitchPanelUC(MainForm.UserControl.Log);
         }
+
+        private void Panel_Log_Click(object sender, EventArgs e)
+        {
+            MainForm.mf.Picture_GoHome.Visible = true;
+            MainForm.SwitchPanelUC(MainForm.UserControl.Log);
+        }
+        #endregion
     }
 }

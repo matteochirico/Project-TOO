@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.Header = new System.Windows.Forms.Panel();
+            this.Picture_GoHome = new System.Windows.Forms.PictureBox();
             this.Label_DisplayName = new System.Windows.Forms.Label();
             this.Picture_Minimize = new System.Windows.Forms.PictureBox();
             this.Picture_Exit = new System.Windows.Forms.PictureBox();
@@ -40,17 +41,16 @@
             this.Timer_Start = new System.Windows.Forms.Timer(this.components);
             this.Timer_MinimizeOut = new System.Windows.Forms.Timer(this.components);
             this.Timer_MinimizeIn = new System.Windows.Forms.Timer(this.components);
-            this.Picture_GoBack = new System.Windows.Forms.PictureBox();
             this.Header.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Picture_GoHome)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Picture_Minimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Picture_Exit)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Picture_GoBack)).BeginInit();
             this.SuspendLayout();
             // 
             // Header
             // 
             this.Header.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(40)))), ((int)(((byte)(46)))));
-            this.Header.Controls.Add(this.Picture_GoBack);
+            this.Header.Controls.Add(this.Picture_GoHome);
             this.Header.Controls.Add(this.Label_DisplayName);
             this.Header.Controls.Add(this.Picture_Minimize);
             this.Header.Controls.Add(this.Picture_Exit);
@@ -59,6 +59,21 @@
             this.Header.Name = "Header";
             this.Header.Size = new System.Drawing.Size(534, 40);
             this.Header.TabIndex = 0;
+            // 
+            // Picture_GoHome
+            // 
+            this.Picture_GoHome.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Picture_GoHome.Image = global::Project_TOO.Properties.Resources.Go_Home__White_;
+            this.Picture_GoHome.Location = new System.Drawing.Point(431, 8);
+            this.Picture_GoHome.Name = "Picture_GoHome";
+            this.Picture_GoHome.Size = new System.Drawing.Size(25, 25);
+            this.Picture_GoHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Picture_GoHome.TabIndex = 8;
+            this.Picture_GoHome.TabStop = false;
+            this.Picture_GoHome.Visible = false;
+            this.Picture_GoHome.Click += new System.EventHandler(this.Picture_GoBackClicked);
+            this.Picture_GoHome.MouseEnter += new System.EventHandler(this.Picture_GoHome_MouseEnter);
+            this.Picture_GoHome.MouseLeave += new System.EventHandler(this.Picture_GoHome_MouseLeave);
             // 
             // Label_DisplayName
             // 
@@ -82,6 +97,8 @@
             this.Picture_Minimize.TabIndex = 3;
             this.Picture_Minimize.TabStop = false;
             this.Picture_Minimize.Click += new System.EventHandler(this.Picture_Minimize_Click);
+            this.Picture_Minimize.MouseEnter += new System.EventHandler(this.Picture_Minimize_MouseEnter);
+            this.Picture_Minimize.MouseLeave += new System.EventHandler(this.Picture_Minimize_MouseLeave);
             // 
             // Picture_Exit
             // 
@@ -94,6 +111,8 @@
             this.Picture_Exit.TabIndex = 2;
             this.Picture_Exit.TabStop = false;
             this.Picture_Exit.Click += new System.EventHandler(this.Picture_Exit_Click);
+            this.Picture_Exit.MouseEnter += new System.EventHandler(this.Picture_Exit_MouseEnter);
+            this.Picture_Exit.MouseLeave += new System.EventHandler(this.Picture_Exit_MouseLeave);
             // 
             // bunifuElipse1
             // 
@@ -102,6 +121,7 @@
             // 
             // Panel_Placeholder
             // 
+            this.Panel_Placeholder.BackColor = System.Drawing.SystemColors.Control;
             this.Panel_Placeholder.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Panel_Placeholder.Location = new System.Drawing.Point(0, 40);
             this.Panel_Placeholder.Name = "Panel_Placeholder";
@@ -135,19 +155,6 @@
             this.Timer_MinimizeIn.Interval = 1;
             this.Timer_MinimizeIn.Tick += new System.EventHandler(this.Timer_MinimizeIn_Tick);
             // 
-            // Picture_GoBack
-            // 
-            this.Picture_GoBack.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Picture_GoBack.Image = global::Project_TOO.Properties.Resources.Go_Back__White_;
-            this.Picture_GoBack.Location = new System.Drawing.Point(423, 5);
-            this.Picture_GoBack.Name = "Picture_GoBack";
-            this.Picture_GoBack.Size = new System.Drawing.Size(30, 30);
-            this.Picture_GoBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Picture_GoBack.TabIndex = 8;
-            this.Picture_GoBack.TabStop = false;
-            this.Picture_GoBack.Visible = false;
-            this.Picture_GoBack.Click += new System.EventHandler(this.Picture_GoBackClicked);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -162,9 +169,9 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Header.ResumeLayout(false);
             this.Header.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Picture_GoHome)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Picture_Minimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Picture_Exit)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Picture_GoBack)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -182,7 +189,7 @@
         private System.Windows.Forms.PictureBox Picture_Exit;
         private System.Windows.Forms.Timer Timer_MinimizeIn;
         public System.Windows.Forms.Label Label_DisplayName;
-        public System.Windows.Forms.PictureBox Picture_GoBack;
+        public System.Windows.Forms.PictureBox Picture_GoHome;
     }
 }
 

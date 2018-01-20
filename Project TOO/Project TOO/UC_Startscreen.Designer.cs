@@ -36,9 +36,9 @@
             this.Textbox = new System.Windows.Forms.TextBox();
             this.Elipse_Textbox = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.Elipse_Button = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.Label_ErrorText = new System.Windows.Forms.Label();
             this.Button_Proceed = new Bunifu.Framework.UI.BunifuThinButton2();
             this.Logo = new System.Windows.Forms.PictureBox();
-            this.Label_ErrorText = new System.Windows.Forms.Label();
             this.Panel_Textbox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             this.SuspendLayout();
@@ -47,7 +47,7 @@
             // 
             this.Title.AutoSize = true;
             this.Title.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Title.ForeColor = System.Drawing.Color.White;
+            this.Title.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(74)))), ((int)(((byte)(75)))));
             this.Title.Location = new System.Drawing.Point(160, 91);
             this.Title.Name = "Title";
             this.Title.Size = new System.Drawing.Size(214, 25);
@@ -56,7 +56,7 @@
             // 
             // Panel_Textbox
             // 
-            this.Panel_Textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(40)))), ((int)(((byte)(46)))));
+            this.Panel_Textbox.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Panel_Textbox.Controls.Add(this.Label_Textbox);
             this.Panel_Textbox.Controls.Add(this.Textbox);
             this.Panel_Textbox.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -71,7 +71,7 @@
             this.Label_Textbox.AutoSize = true;
             this.Label_Textbox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Label_Textbox.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_Textbox.ForeColor = System.Drawing.Color.White;
+            this.Label_Textbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(74)))), ((int)(((byte)(75)))));
             this.Label_Textbox.Location = new System.Drawing.Point(7, 4);
             this.Label_Textbox.Name = "Label_Textbox";
             this.Label_Textbox.Size = new System.Drawing.Size(46, 16);
@@ -81,11 +81,11 @@
             // 
             // Textbox
             // 
-            this.Textbox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(40)))), ((int)(((byte)(46)))));
+            this.Textbox.BackColor = System.Drawing.SystemColors.ControlLight;
             this.Textbox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Textbox.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.Textbox.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Textbox.ForeColor = System.Drawing.Color.White;
+            this.Textbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(65)))));
             this.Textbox.Location = new System.Drawing.Point(9, 23);
             this.Textbox.Name = "Textbox";
             this.Textbox.Size = new System.Drawing.Size(195, 19);
@@ -103,24 +103,36 @@
             this.Elipse_Button.ElipseRadius = 20;
             this.Elipse_Button.TargetControl = this.Button_Proceed;
             // 
+            // Label_ErrorText
+            // 
+            this.Label_ErrorText.AutoSize = true;
+            this.Label_ErrorText.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_ErrorText.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(74)))), ((int)(((byte)(75)))));
+            this.Label_ErrorText.Location = new System.Drawing.Point(170, 260);
+            this.Label_ErrorText.Name = "Label_ErrorText";
+            this.Label_ErrorText.Size = new System.Drawing.Size(194, 18);
+            this.Label_ErrorText.TabIndex = 8;
+            this.Label_ErrorText.Text = "Du må skrive inn ett navn.";
+            this.Label_ErrorText.Visible = false;
+            // 
             // Button_Proceed
             // 
             this.Button_Proceed.ActiveBorderThickness = 1;
             this.Button_Proceed.ActiveCornerRadius = 20;
-            this.Button_Proceed.ActiveFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(40)))), ((int)(((byte)(46)))));
-            this.Button_Proceed.ActiveForecolor = System.Drawing.Color.Silver;
-            this.Button_Proceed.ActiveLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(40)))), ((int)(((byte)(46)))));
-            this.Button_Proceed.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(50)))), ((int)(((byte)(56)))));
+            this.Button_Proceed.ActiveFillColor = System.Drawing.SystemColors.ControlLight;
+            this.Button_Proceed.ActiveForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(65)))));
+            this.Button_Proceed.ActiveLineColor = System.Drawing.SystemColors.ControlLight;
+            this.Button_Proceed.BackColor = System.Drawing.SystemColors.Control;
             this.Button_Proceed.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Button_Proceed.BackgroundImage")));
             this.Button_Proceed.ButtonText = "Fortsett";
             this.Button_Proceed.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Button_Proceed.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Button_Proceed.ForeColor = System.Drawing.Color.White;
+            this.Button_Proceed.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(74)))), ((int)(((byte)(75)))));
             this.Button_Proceed.IdleBorderThickness = 1;
             this.Button_Proceed.IdleCornerRadius = 20;
-            this.Button_Proceed.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(40)))), ((int)(((byte)(46)))));
-            this.Button_Proceed.IdleForecolor = System.Drawing.Color.White;
-            this.Button_Proceed.IdleLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(40)))), ((int)(((byte)(46)))));
+            this.Button_Proceed.IdleFillColor = System.Drawing.SystemColors.ControlLight;
+            this.Button_Proceed.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(74)))), ((int)(((byte)(75)))));
+            this.Button_Proceed.IdleLineColor = System.Drawing.SystemColors.ControlLight;
             this.Button_Proceed.Location = new System.Drawing.Point(188, 209);
             this.Button_Proceed.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Button_Proceed.Name = "Button_Proceed";
@@ -131,7 +143,7 @@
             // 
             // Logo
             // 
-            this.Logo.Image = global::Project_TOO.Properties.Resources.Application_Icon__White_;
+            this.Logo.Image = global::Project_TOO.Properties.Resources.Application_Icon__DimGray_;
             this.Logo.Location = new System.Drawing.Point(222, -1);
             this.Logo.Name = "Logo";
             this.Logo.Size = new System.Drawing.Size(90, 90);
@@ -139,23 +151,11 @@
             this.Logo.TabIndex = 3;
             this.Logo.TabStop = false;
             // 
-            // Label_ErrorText
-            // 
-            this.Label_ErrorText.AutoSize = true;
-            this.Label_ErrorText.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_ErrorText.ForeColor = System.Drawing.Color.White;
-            this.Label_ErrorText.Location = new System.Drawing.Point(170, 260);
-            this.Label_ErrorText.Name = "Label_ErrorText";
-            this.Label_ErrorText.Size = new System.Drawing.Size(194, 18);
-            this.Label_ErrorText.TabIndex = 8;
-            this.Label_ErrorText.Text = "Du må skrive inn ett navn.";
-            this.Label_ErrorText.Visible = false;
-            // 
             // UC_Startscreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(50)))), ((int)(((byte)(56)))));
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.Controls.Add(this.Label_ErrorText);
             this.Controls.Add(this.Button_Proceed);
             this.Controls.Add(this.Panel_Textbox);

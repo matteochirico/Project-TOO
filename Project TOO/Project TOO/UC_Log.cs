@@ -16,5 +16,13 @@ namespace Project_TOO
         {
             InitializeComponent();
         }
+
+        private void UC_Log_Load(object sender, EventArgs e)
+        {
+            cartesianChart1.Series.Add(ProjectController.sc[0]);
+            ProjectController.sc[0].Values.Add(0);
+            ProjectController.sc[0].Values.Add(1);
+            ProjectController.sc[0].Values.Add(0);
+        }
     }
 }

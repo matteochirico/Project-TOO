@@ -43,7 +43,7 @@ namespace Project_TOO
             SwitchPanelUC(UserControl.Startscreen);
         }
 
-        #region Personalization
+        #region Personalization & Mouse Events
         public static void SwitchPanelUC(UserControl userControl)
         {
             switch (userControl)
@@ -66,6 +66,36 @@ namespace Project_TOO
         public static void SetDisplayName(string name)
         {
             displayNameLabel.Text = name;
+        }
+        
+        private void Picture_Exit_MouseEnter(object sender, EventArgs e)
+        {
+            Picture_Exit.Image = Properties.Resources.Exit_Application__Silver_;
+        }
+
+        private void Picture_Exit_MouseLeave(object sender, EventArgs e)
+        {
+            Picture_Exit.Image = Properties.Resources.Exit_Application__White_;
+        }
+
+        private void Picture_Minimize_MouseEnter(object sender, EventArgs e)
+        {
+            Picture_Minimize.Image = Properties.Resources.Minimize_Application__Silver_;
+        }
+
+        private void Picture_Minimize_MouseLeave(object sender, EventArgs e)
+        {
+            Picture_Minimize.Image = Properties.Resources.Minimize_Application__White_;
+        }
+
+        private void Picture_GoHome_MouseEnter(object sender, EventArgs e)
+        {
+            Picture_GoHome.Image = Properties.Resources.Go_Home__Silver_;
+        }
+
+        private void Picture_GoHome_MouseLeave(object sender, EventArgs e)
+        {
+            Picture_GoHome.Image = Properties.Resources.Go_Home__White_;
         }
 
         #region Fade in & Out
@@ -137,7 +167,7 @@ namespace Project_TOO
             if (placeHolder.Controls.Contains(ucl))
             {
                 SwitchPanelUC(UserControl.Mainscreen);
-                Picture_GoBack.Visible = false;
+                Picture_GoHome.Visible = false;
             }
         }
     }

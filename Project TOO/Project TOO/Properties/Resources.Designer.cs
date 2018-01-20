@@ -63,9 +63,49 @@ namespace Project_TOO.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Application_Icon__DimGray_ {
+            get {
+                object obj = ResourceManager.GetObject("Application Icon (DimGray)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Application_Icon__White_ {
             get {
                 object obj = ResourceManager.GetObject("Application_Icon__White_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Exit_Application__DarkGray_ {
+            get {
+                object obj = ResourceManager.GetObject("Exit Application (DarkGray)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Exit_Application__DimGray_ {
+            get {
+                object obj = ResourceManager.GetObject("Exit Application (DimGray)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Exit_Application__Silver_ {
+            get {
+                object obj = ResourceManager.GetObject("Exit Application (Silver)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,6 +133,66 @@ namespace Project_TOO.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Go_Home__DarkGray_ {
+            get {
+                object obj = ResourceManager.GetObject("Go Home (DarkGray)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Go_Home__DimGray_ {
+            get {
+                object obj = ResourceManager.GetObject("Go Home (DimGray)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Go_Home__Silver_ {
+            get {
+                object obj = ResourceManager.GetObject("Go Home (Silver)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Go_Home__White_ {
+            get {
+                object obj = ResourceManager.GetObject("Go Home (White)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap History__DarkGray_ {
+            get {
+                object obj = ResourceManager.GetObject("History (DarkGray)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap History__DimGray_ {
+            get {
+                object obj = ResourceManager.GetObject("History (DimGray)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap History__Silver_ {
             get {
                 object obj = ResourceManager.GetObject("History (Silver)", resourceCulture);
@@ -113,9 +213,59 @@ namespace Project_TOO.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Minimize_Application__DarkGray_ {
+            get {
+                object obj = ResourceManager.GetObject("Minimize Application (DarkGray)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Minimize_Application__DimGray_ {
+            get {
+                object obj = ResourceManager.GetObject("Minimize Application (DimGray)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Minimize_Application__Silver_ {
+            get {
+                object obj = ResourceManager.GetObject("Minimize Application (Silver)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Minimize_Application__White_ {
             get {
                 object obj = ResourceManager.GetObject("Minimize Application (White)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Start_Test__DarkGray_ {
+            get {
+                object obj = ResourceManager.GetObject("Start Test (DarkGray)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Start_Test__DimGray_ {
+            get {
+                object obj = ResourceManager.GetObject("Start Test (DimGray)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
