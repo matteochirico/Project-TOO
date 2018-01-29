@@ -117,24 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="Elipse_Textbox.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
-  <metadata name="Elipse_Button.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>148, 17</value>
-  </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="Button_Proceed.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAKMAAAAlCAYAAAAuhVlFAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF3SURBVHhe7dvNjoIwFEDhef/HRFEQf3iDTk5NHYkdM8lI
-        uYuz+FaAq5NbwPI1z3OSIjBGhWGMCsMYFYYxKgxjVBhvY7zdbmmapnQ8HlPf92m/36fdbif9Gc3QDg3R
-        Ek3VWsOvMZ7P5/xDBqhPKT2dTqdqcy8xUi4VG6HWwqQ8HA7per0u2lvESIhGqFZo7TnIRYxMxNpF0lqY
-        ki8xlnvE2gXSWohxHMefGF2etSXau1wu9xh55DZGbYnpmGP0XlFbYxjmGFm3u66rniS1kmN0iVYEOcba
-        Aak1Y1QYxqgwjFFhGKPCyDH6NK0Icoxs56kdlFrgHTfvunOM/BXjdNSWhmG4x8ieMsqsnSStjUHIrrEc
-        o9NRW2JvBA0+YmQbmdNRrdFc+UjrESPYU8Z0dNOEWqA1miv9LWJECbJ2sfQpTMTnEPESIxib3kNqDTTF
-        q8SyND+rxlhQLo/cRqn/oqHyIX+tNbyNUWrJGBWGMSoMY1QYxqgg5vQNSCVMlu/vLuwAAAAASUVORK5C
-        YII=
-</value>
-  </data>
 </root>
