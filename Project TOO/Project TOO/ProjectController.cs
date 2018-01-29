@@ -13,20 +13,16 @@ using System.Windows.Media;
 namespace Project_TOO
 {
     public static class ProjectController
-    { 
-        private static string _displayName;
-        public static string DisplayName
-        {
-            get { return _displayName; }
-        }
-
-        public static SeriesCollection sc = new SeriesCollection
+    {
+        #region Chart Objects
+        public static SeriesCollection scPoints = new SeriesCollection
         {
             new LineSeries
             {
-                Title = "Logg",
+                Title = "Poeng",
+                DataLabels = true,
                 Values = new ChartValues<int>(),
-                PointGeometry = null,
+                //PointGeometry = null,
                 LineSmoothness = 1,
                 Fill = new SolidColorBrush
                 {
@@ -35,6 +31,30 @@ namespace Project_TOO
                 }
             }
         };
+
+        public static SeriesCollection scTime = new SeriesCollection
+        {
+            new LineSeries
+            {
+                Title = "Tid",
+                DataLabels = true,
+                Values = new ChartValues<int>(),
+                //PointGeometry = null,
+                LineSmoothness = 1,
+                Fill = new SolidColorBrush
+                {
+                    Color = System.Windows.Media.Color.FromRgb(37, 65, 84),
+                    Opacity = 0.1
+                }
+            }
+        };
+        #endregion
+
+        private static string _displayName;
+        public static string DisplayName
+        {
+            get { return _displayName; }
+        }
 
         public static void SetDisplayName(string name)
         {
