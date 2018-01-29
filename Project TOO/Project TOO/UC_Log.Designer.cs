@@ -40,7 +40,7 @@
             this.cartesianChart1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(74)))), ((int)(((byte)(75)))));
             this.cartesianChart1.Location = new System.Drawing.Point(-25, 30);
             this.cartesianChart1.Name = "cartesianChart1";
-            this.cartesianChart1.Size = new System.Drawing.Size(565, 296);
+            this.cartesianChart1.Size = new System.Drawing.Size(570, 296);
             this.cartesianChart1.TabIndex = 0;
             this.cartesianChart1.Text = "cartesianChart1";
             // 

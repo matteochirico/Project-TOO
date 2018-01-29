@@ -19,10 +19,15 @@ namespace Project_TOO
 
         private void UC_Log_Load(object sender, EventArgs e)
         {
-            cartesianChart1.Series.Add(ProjectController.sc[0]);
-            ProjectController.sc[0].Values.Add(0);
-            ProjectController.sc[0].Values.Add(1);
-            ProjectController.sc[0].Values.Add(0);
+            cartesianChart1.Series.Add(ProjectController.scPoints[0]);
+            cartesianChart1.Series.Add(ProjectController.scTime[0]);
+            cartesianChart1.BackColorTransparent = true;
+            ProjectController.scPoints[0].Values.Add(0);
+            ProjectController.scPoints[0].Values.Add(5);
+            ProjectController.scPoints[0].Values.Add(2);
+            ProjectController.scTime[0].Values.Add(2);
+            ProjectController.scTime[0].Values.Add(8);
+            ProjectController.scTime[0].Values.Add(5);
         }
     }
 }
