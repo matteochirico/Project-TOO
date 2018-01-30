@@ -91,6 +91,7 @@
             this.Picture_Start.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Picture_Start.TabIndex = 11;
             this.Picture_Start.TabStop = false;
+            this.Picture_Start.Click += new System.EventHandler(this.StartTest_Click);
             this.Picture_Start.MouseEnter += new System.EventHandler(this.Panel_Start_MouseEnter);
             this.Picture_Start.MouseLeave += new System.EventHandler(this.Panel_Start_MouseLeave);
             // 
@@ -105,6 +106,7 @@
             this.Label_Start.Size = new System.Drawing.Size(100, 18);
             this.Label_Start.TabIndex = 6;
             this.Label_Start.Text = "Starte en test";
+            this.Label_Start.Click += new System.EventHandler(this.StartTest_Click);
             this.Label_Start.MouseEnter += new System.EventHandler(this.Panel_Start_MouseEnter);
             this.Label_Start.MouseLeave += new System.EventHandler(this.Panel_Start_MouseLeave);
             // 

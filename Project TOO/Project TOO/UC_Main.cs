@@ -53,6 +53,11 @@ namespace Project_TOO
             MainForm.mf.Picture_GoHome.Visible = true;
             MainForm.SwitchPanelUC(MainForm.UserControl.Log);
         }
+
+        private void StartTest_Click(object sender, EventArgs e)
+        {
+
+        }
         #endregion
     }
 }
