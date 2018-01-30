@@ -12,6 +12,7 @@ namespace Project_TOO
 {
     public partial class MainForm : Form
     {
+        #region Public Variables
         static Panel placeHolder;
         static Label displayNameLabel;
         public static MainForm mf;
@@ -26,7 +27,9 @@ namespace Project_TOO
             Mainscreen,
             Log
         }
+        #endregion
 
+        #region Form Stuff
         public MainForm()
         {
             InitializeComponent();
@@ -42,6 +45,7 @@ namespace Project_TOO
             Timer_Start.Start();
             SwitchPanelUC(UserControl.Startscreen);
         }
+        #endregion
 
         #region Personalization & Mouse Events
         public static void SwitchPanelUC(UserControl userControl)
@@ -157,6 +161,7 @@ namespace Project_TOO
         #endregion
         #endregion
 
+        #region Click Events
         private void Picture_GoBackClicked(object sender, EventArgs e)
         {
             GoBack();
@@ -170,5 +175,6 @@ namespace Project_TOO
                 Picture_GoHome.Visible = false;
             }
         }
+        #endregion
     }
 }

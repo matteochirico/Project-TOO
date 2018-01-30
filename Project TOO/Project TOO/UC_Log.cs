@@ -12,6 +12,7 @@ namespace Project_TOO
 {
     public partial class UC_Log : UserControl
     {
+        #region Form Stuff
         public UC_Log()
         {
             InitializeComponent();
@@ -29,5 +30,6 @@ namespace Project_TOO
             ProjectController.scTime[0].Values.Add(8);
             ProjectController.scTime[0].Values.Add(5);
         }
+        #endregion
     }
 }

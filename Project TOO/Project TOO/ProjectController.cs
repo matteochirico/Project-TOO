@@ -14,7 +14,7 @@ namespace Project_TOO
 {
     public static class ProjectController
     {
-        #region Chart Objects
+        #region LiveChart Objects & Variables
         public static SeriesCollection scPoints = new SeriesCollection
         {
             new LineSeries
@@ -50,6 +50,7 @@ namespace Project_TOO
         };
         #endregion
 
+        #region Get Name & Set Name Functions
         private static string _displayName;
         public static string DisplayName
         {
@@ -77,5 +78,6 @@ namespace Project_TOO
 
             MainForm.SetDisplayName(DisplayName);
         }
+        #endregion
     }
 }

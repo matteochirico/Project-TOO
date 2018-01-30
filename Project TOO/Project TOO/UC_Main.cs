@@ -12,10 +12,12 @@ namespace Project_TOO
 {
     public partial class UC_Main : UserControl
     {
+        #region Form Stuff
         public UC_Main()
         {
             InitializeComponent();
         }
+        #endregion
 
         #region Color Handling & Click Events
         private void Panel_Start_MouseEnter(object sender, EventArgs e)

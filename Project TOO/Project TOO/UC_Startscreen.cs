@@ -12,11 +12,14 @@ namespace Project_TOO
 {
     public partial class UC_Startscreen : UserControl
     {
+        #region Form Stuff
         public UC_Startscreen()
         {
             InitializeComponent();
         }
-        
+        #endregion
+
+        #region Click & Keypress Events
         private void Textbox_Click(object sender, EventArgs e)
         {
             Textbox.Focus();
@@ -34,7 +37,9 @@ namespace Project_TOO
         {
             Proceed();
         }
+        #endregion
 
+        #region Name Validation
         private void Proceed()
         {
             var text = Textbox.Text;
@@ -111,5 +116,6 @@ namespace Project_TOO
             await Task.Delay(TimeSpan.FromSeconds(1));
             Label_ErrorText.Visible = false;
         }
+        #endregion
     }
 }
