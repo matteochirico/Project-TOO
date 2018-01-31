@@ -22,9 +22,6 @@ namespace Project_TOO
         {
             cartesianChart1.Series.Add(ProjectController.scPoints[0]);
             cartesianChart1.BackColorTransparent = true;
-
-            ProjectController.WriteLog(68, 05);
-            ProjectController.WriteLog(71, 05);
         }
         #endregion
     }

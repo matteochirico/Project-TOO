@@ -33,7 +33,7 @@
             // 
             // cartesianChart1
             // 
-            this.cartesianChart1.BackColor = System.Drawing.SystemColors.Control;
+            this.cartesianChart1.BackColor = System.Drawing.Color.Transparent;
             this.cartesianChart1.BackColorTransparent = true;
             this.cartesianChart1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.cartesianChart1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
