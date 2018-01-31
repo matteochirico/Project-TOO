@@ -95,12 +95,6 @@
     <Compile Include="UC_Startscreen.Designer.cs">
       <DependentUpon>UC_Startscreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="UC_TestConfiguration.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UC_TestConfiguration.Designer.cs">
-      <DependentUpon>UC_TestConfiguration.cs</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -117,9 +111,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC_Startscreen.resx">
       <DependentUpon>UC_Startscreen.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UC_TestConfiguration.resx">
-      <DependentUpon>UC_TestConfiguration.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
