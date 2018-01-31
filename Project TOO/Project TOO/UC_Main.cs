@@ -16,6 +16,9 @@ namespace Project_TOO
         public UC_Main()
         {
             InitializeComponent();
+
+            ProjectController.WriteLog(68, 05);
+            ProjectController.WriteLog(71, 05);
         }
         #endregion
 
